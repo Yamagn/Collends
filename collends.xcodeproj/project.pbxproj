@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0726B2C62306CCF7007A1BA7 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07BB69602306BA4A00BCEFEF /* TwitterKit.framework */; };
+		0726B2C82306CD06007A1BA7 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0726B2C72306CD06007A1BA7 /* TwitterCore.framework */; };
+		0726B2C92306D08F007A1BA7 /* APIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07B5811823018BA200A3CB37 /* APIKit.framework */; };
+		0726B2CC2306D27D007A1BA7 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07B5811723018BA200A3CB37 /* Kingfisher.framework */; };
+		0726B2CD23071EAE007A1BA7 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07BB695E2306BA1E00BCEFEF /* RealmSwift.framework */; };
+		0726B2CE23071EBE007A1BA7 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07BB69622306BB7C00BCEFEF /* Realm.framework */; };
+		07BB695A2306B13400BCEFEF /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07BB69592306B13400BCEFEF /* API.swift */; };
+		07BB695D2306B2F400BCEFEF /* Twitter_Logo_WhiteOnBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = 07BB695C2306B2F400BCEFEF /* Twitter_Logo_WhiteOnBlue.png */; };
 		07FA3DE222FEBE75005F5D54 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07FA3DE122FEBE75005F5D54 /* AppDelegate.swift */; };
 		07FA3DE922FEBE76005F5D54 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07FA3DE822FEBE76005F5D54 /* Assets.xcassets */; };
 		07FA3DEC22FEBE76005F5D54 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 07FA3DEA22FEBE76005F5D54 /* LaunchScreen.storyboard */; };
@@ -40,6 +48,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0726B2C72306CD06007A1BA7 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwitterCore.framework; path = Carthage/Build/iOS/TwitterCore.framework; sourceTree = "<group>"; };
+		0726B2CA2306D226007A1BA7 /* Kingfisher.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Kingfisher.framework.dSYM; path = Carthage/Build/iOS/Kingfisher.framework.dSYM; sourceTree = "<group>"; };
+		07B5811723018BA200A3CB37 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = Carthage/Build/iOS/Kingfisher.framework; sourceTree = "<group>"; };
+		07B5811823018BA200A3CB37 /* APIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = APIKit.framework; path = Carthage/Build/iOS/APIKit.framework; sourceTree = "<group>"; };
+		07BB69592306B13400BCEFEF /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		07BB695C2306B2F400BCEFEF /* Twitter_Logo_WhiteOnBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Twitter_Logo_WhiteOnBlue.png; path = ../../../../Pictures/Twitter_Logo_WhiteOnBlue.png; sourceTree = "<group>"; };
+		07BB695E2306BA1E00BCEFEF /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
+		07BB69602306BA4A00BCEFEF /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwitterKit.framework; path = Carthage/Build/iOS/TwitterKit.framework; sourceTree = "<group>"; };
+		07BB69622306BB7C00BCEFEF /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
 		07FA3DDE22FEBE75005F5D54 /* collends.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = collends.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07FA3DE122FEBE75005F5D54 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		07FA3DE822FEBE76005F5D54 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -66,6 +83,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0726B2CE23071EBE007A1BA7 /* Realm.framework in Frameworks */,
+				0726B2CD23071EAE007A1BA7 /* RealmSwift.framework in Frameworks */,
+				0726B2CC2306D27D007A1BA7 /* Kingfisher.framework in Frameworks */,
+				0726B2C92306D08F007A1BA7 /* APIKit.framework in Frameworks */,
+				0726B2C82306CD06007A1BA7 /* TwitterCore.framework in Frameworks */,
+				0726B2C62306CCF7007A1BA7 /* TwitterKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +109,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		07B5811623018BA100A3CB37 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0726B2CA2306D226007A1BA7 /* Kingfisher.framework.dSYM */,
+				0726B2C72306CD06007A1BA7 /* TwitterCore.framework */,
+				07BB69622306BB7C00BCEFEF /* Realm.framework */,
+				07BB69602306BA4A00BCEFEF /* TwitterKit.framework */,
+				07BB695E2306BA1E00BCEFEF /* RealmSwift.framework */,
+				07B5811823018BA200A3CB37 /* APIKit.framework */,
+				07B5811723018BA200A3CB37 /* Kingfisher.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		07BB695B2306B2E900BCEFEF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				07BB695C2306B2F400BCEFEF /* Twitter_Logo_WhiteOnBlue.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		07FA3DD522FEBE75005F5D54 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +138,7 @@
 				07FA3DF522FEBE76005F5D54 /* collendsTests */,
 				07FA3E0022FEBE76005F5D54 /* collendsUITests */,
 				07FA3DDF22FEBE75005F5D54 /* Products */,
+				07B5811623018BA100A3CB37 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,6 +155,7 @@
 		07FA3DE022FEBE75005F5D54 /* collends */ = {
 			isa = PBXGroup;
 			children = (
+				07BB695B2306B2E900BCEFEF /* Resources */,
 				07FA3E1322FEBF17005F5D54 /* Extentions */,
 				07FA3E1222FEBF0B005F5D54 /* API */,
 				07FA3E1122FEBEEF005F5D54 /* Scenes */,
@@ -168,6 +215,7 @@
 		07FA3E1222FEBF0B005F5D54 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				07BB69592306B13400BCEFEF /* API.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -233,6 +281,7 @@
 				07FA3DDA22FEBE75005F5D54 /* Sources */,
 				07FA3DDB22FEBE75005F5D54 /* Frameworks */,
 				07FA3DDC22FEBE75005F5D54 /* Resources */,
+				07B5811B23018BB100A3CB37 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -331,6 +380,7 @@
 				07FA3E2222FEC009005F5D54 /* Friends.storyboard in Resources */,
 				07FA3DEC22FEBE76005F5D54 /* LaunchScreen.storyboard in Resources */,
 				07FA3E2622FEC025005F5D54 /* Home.storyboard in Resources */,
+				07BB695D2306B2F400BCEFEF /* Twitter_Logo_WhiteOnBlue.png in Resources */,
 				07FA3DE922FEBE76005F5D54 /* Assets.xcassets in Resources */,
 				07FA3E1E22FEBFED005F5D54 /* Detail.storyboard in Resources */,
 			);
@@ -352,6 +402,32 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		07B5811B23018BB100A3CB37 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/TwitterKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/TwitterCore.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/APIKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Kingfisher.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Realm.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RealmSwift.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		07FA3DDA22FEBE75005F5D54 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -361,6 +437,7 @@
 				07FA3E2422FEC018005F5D54 /* FriendsViewController.swift in Sources */,
 				07FA3E2022FEBFFA005F5D54 /* DetailViewController.swift in Sources */,
 				07FA3E1C22FEBFE0005F5D54 /* AuthViewController.swift in Sources */,
+				07BB695A2306B13400BCEFEF /* API.swift in Sources */,
 				07FA3DE222FEBE75005F5D54 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -530,6 +607,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z23YQJ49WW;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = collends/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -548,6 +629,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Z23YQJ49WW;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = collends/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
