@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FriendsViewController: UIViewController {
+class WeathersViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
