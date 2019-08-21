@@ -10,7 +10,7 @@ import UIKit
 import APIKit
 import Kingfisher
 
-class HomeViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class HomeViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     var imageList: [APOD] = []
     @IBOutlet weak var collectionView: UICollectionView!
@@ -35,6 +35,10 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
             }
         }
         super.viewDidLoad()
+        
+        let layout = UICollectionViewFlowLayout()
+        layout.sectionInset = UIEdgeInsets(top: 15, left: 15, bottom: 15, right: 15)
+        collectionView.collectionViewLayout = layout
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -56,5 +60,11 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
         }
         
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let horizontalSpace: CGFloat = 20
+        let cellSize: CGFloat = self.view.bounds.width / 3 - horizontalSpace
+        return CGSize(width: cellSize, height: cellSize)
     }
 }

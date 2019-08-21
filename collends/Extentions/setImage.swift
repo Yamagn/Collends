@@ -12,7 +12,7 @@ import UIKit
 
 extension UIImageView {
     func setImage(with url: URL) {
-        self.kf.setImage(with: url) { [weak self] image, error, _, _ in
+        self.kf.setImage(with: url, placeholder: nil, ) { [weak self] image, error, _, _ in
             if error == nil, let image = image {
                 self?.image = image
             }
