@@ -8,6 +8,7 @@
 
 import UIKit
 import APIKit
+import Kingfisher
 
 class HomeViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
@@ -22,20 +23,18 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
         for diff in 1...18 {
             let dd = Calendar.current.date(byAdding: .day, value: diff * -1, to: now)!
             let date: String = formatter.string(from: dd)
-            print(date)
             let request = NASAAPI.AstronomyPtictureOfTheDay(date: date)
             Session.send(request) { result in
                 switch result {
                     case .success(let response):
-                        print(response)
+                        self.imageList.append(response)
+                        self.collectionView.reloadData()
                     case .failure(let error):
                         print(error)
                 }
             }
         }
         super.viewDidLoad()
-        let nib = UINib(nibName: "SpaceCell", bundle: nil)
-        collectionView.register(nib, forCellWithReuseIdentifier: "SpaceCell")
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -43,7 +42,19 @@ class HomeViewController: UIViewController, UICollectionViewDelegate, UICollecti
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SpaceCell", for: indexPath) as! SpaceCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SpaceCell", for: indexPath)
+        let urlStr = imageList[indexPath.row].url
+        if urlStr.contains(".jpg") || urlStr.contains(".png") {
+            let url = URL(string: urlStr)!
+            if let imageView = cell.contentView.viewWithTag(1) as? UIImageView {
+                imageView.setImage(with: url)
+            }
+        } else {
+            if let imageView = cell.contentView.viewWithTag(1) as? UIImageView {
+                imageView.image = UIImage(named: "noimage")
+            }
+        }
+        
         return cell
     }
 }

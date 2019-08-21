@@ -14,6 +14,8 @@
 		0726B2CC2306D27D007A1BA7 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07B5811723018BA200A3CB37 /* Kingfisher.framework */; };
 		0726B2CD23071EAE007A1BA7 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07BB695E2306BA1E00BCEFEF /* RealmSwift.framework */; };
 		0726B2CE23071EBE007A1BA7 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07BB69622306BB7C00BCEFEF /* Realm.framework */; };
+		0729B6F3230CC19900D13341 /* setImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0729B6F2230CC19800D13341 /* setImage.swift */; };
+		0729B6F5230CDDF000D13341 /* noimage.png in Resources */ = {isa = PBXBuildFile; fileRef = 0729B6F4230CDDF000D13341 /* noimage.png */; };
 		072AAD11230AC5E400201E3B /* SpaceCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 072AAD0F230AC5E400201E3B /* SpaceCollectionViewCell.swift */; };
 		072AAD12230AC5E400201E3B /* SpaceCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 072AAD10230AC5E400201E3B /* SpaceCollectionViewCell.xib */; };
 		07694BDC230B85DE003089CB /* DecodableDataParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07694BDB230B85DE003089CB /* DecodableDataParser.swift */; };
@@ -54,6 +56,8 @@
 		071B35BB230994F000D97BE5 /* key.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = key.swift; sourceTree = "<group>"; };
 		0726B2C72306CD06007A1BA7 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = TwitterCore.framework; path = Carthage/Build/iOS/TwitterCore.framework; sourceTree = "<group>"; };
 		0726B2CA2306D226007A1BA7 /* Kingfisher.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Kingfisher.framework.dSYM; path = Carthage/Build/iOS/Kingfisher.framework.dSYM; sourceTree = "<group>"; };
+		0729B6F2230CC19800D13341 /* setImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = setImage.swift; sourceTree = "<group>"; };
+		0729B6F4230CDDF000D13341 /* noimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = noimage.png; path = ../../../../Pictures/noimage.png; sourceTree = "<group>"; };
 		072AAD0F230AC5E400201E3B /* SpaceCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceCollectionViewCell.swift; sourceTree = "<group>"; };
 		072AAD10230AC5E400201E3B /* SpaceCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpaceCollectionViewCell.xib; sourceTree = "<group>"; };
 		07694BDB230B85DE003089CB /* DecodableDataParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodableDataParser.swift; sourceTree = "<group>"; };
@@ -141,6 +145,7 @@
 		07BB695B2306B2E900BCEFEF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				0729B6F4230CDDF000D13341 /* noimage.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -230,6 +235,7 @@
 		07FA3E1222FEBF0B005F5D54 /* API */ = {
 			isa = PBXGroup;
 			children = (
+				07694BDB230B85DE003089CB /* DecodableDataParser.swift */,
 				07BB69592306B13400BCEFEF /* API.swift */,
 			);
 			path = API;
@@ -238,7 +244,7 @@
 		07FA3E1322FEBF17005F5D54 /* Extentions */ = {
 			isa = PBXGroup;
 			children = (
-				07694BDB230B85DE003089CB /* DecodableDataParser.swift */,
+				0729B6F2230CC19800D13341 /* setImage.swift */,
 			);
 			path = Extentions;
 			sourceTree = "<group>";
@@ -399,6 +405,7 @@
 				07FA3E2622FEC025005F5D54 /* Home.storyboard in Resources */,
 				072AAD12230AC5E400201E3B /* SpaceCollectionViewCell.xib in Resources */,
 				07FA3DE922FEBE76005F5D54 /* Assets.xcassets in Resources */,
+				0729B6F5230CDDF000D13341 /* noimage.png in Resources */,
 				07FA3E1E22FEBFED005F5D54 /* Detail.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -452,6 +459,7 @@
 			files = (
 				07FA3E2822FEC02F005F5D54 /* HomeViewController.swift in Sources */,
 				07FA3E2422FEC018005F5D54 /* WeathersViewController.swift in Sources */,
+				0729B6F3230CC19900D13341 /* setImage.swift in Sources */,
 				07FA3E2022FEBFFA005F5D54 /* DetailViewController.swift in Sources */,
 				07FA3E1C22FEBFE0005F5D54 /* AuthViewController.swift in Sources */,
 				071B35BC230994F000D97BE5 /* key.swift in Sources */,

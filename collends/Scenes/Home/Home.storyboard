@@ -28,13 +28,24 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="WeatherCell" id="DhC-Bo-5XD">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SpaceCell" id="DhC-Bo-5XD">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                             <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Nyz-2b-o4J">
+                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                </imageView>
+                                            </subviews>
                                         </view>
+                                        <constraints>
+                                            <constraint firstItem="Nyz-2b-o4J" firstAttribute="top" secondItem="DhC-Bo-5XD" secondAttribute="top" id="A9h-9w-WQI"/>
+                                            <constraint firstAttribute="trailing" secondItem="Nyz-2b-o4J" secondAttribute="trailing" id="ASN-2G-1wA"/>
+                                            <constraint firstItem="Nyz-2b-o4J" firstAttribute="leading" secondItem="DhC-Bo-5XD" secondAttribute="leading" id="NR9-F5-2WG"/>
+                                            <constraint firstAttribute="bottom" secondItem="Nyz-2b-o4J" secondAttribute="bottom" id="iEj-gV-DU9"/>
+                                        </constraints>
                                     </collectionViewCell>
                                 </cells>
                                 <connections>
